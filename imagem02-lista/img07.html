@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(4, 80px);
+            gap: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+            width: fit-content;
+        }
+
+        .item {
+            background-color: #2b2b2b;
+            border-radius: 8px;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item-grande {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item item-grande">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+</body>
+</html>
